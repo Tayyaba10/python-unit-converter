@@ -61,6 +61,7 @@ def convert_units(value, from_unit, to_unit,category):
             'hours': 1/3600,
             'days': 1/86400
         }
+        return value * (conversion_factors[to_unit] / conversion_factors[from_unit])
     else:
         return None
 
